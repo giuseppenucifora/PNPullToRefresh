@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "PNPullToRefresh"
   s.version          = "0.1.0"
-  s.summary          = "A short description of PNPullToRefresh."
+  s.summary          = "Control like ActionBar-PullToRefresh of Android for iOS. customized from https://github.com/giuseppenucifora/STZPullToRefresh"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,14 +17,11 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-                       DESC
-
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/PNPullToRefresh"
+  s.homepage         = "https://github.com/giuseppenucifora/PNPullToRefresh"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Giuseppe Nucifora" => "me@giuseppenucifora.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/PNPullToRefresh.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/giuseppenucifora/PNPullToRefresh.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
@@ -36,5 +33,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'UIDevice-Utils'
 end
