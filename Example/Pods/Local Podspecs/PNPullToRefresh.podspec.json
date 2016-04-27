@@ -1,0 +1,29 @@
+{
+  "name": "PNPullToRefresh",
+  "version": "0.1.0",
+  "summary": "Control like ActionBar-PullToRefresh of Android for iOS. customized from https://github.com/giuseppenucifora/STZPullToRefresh",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/PNPullToRefresh",
+  "license": "MIT",
+  "authors": {
+    "Giuseppe Nucifora": "me@giuseppenucifora.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/PNPullToRefresh.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "PNPullToRefresh/Classes/**/*",
+  "resource_bundles": {
+    "PNPullToRefresh": [
+      "PNPullToRefresh/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "UIDevice-Utils": [
+
+    ]
+  }
+}
