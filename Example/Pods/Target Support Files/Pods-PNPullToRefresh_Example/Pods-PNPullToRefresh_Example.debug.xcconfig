@@ -1,6 +1,9 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/PNPullToRefresh.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/UIDevice_Utils.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "PNPullToRefresh" -framework "UIDevice_Utils"
-PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-PNPullToRefresh_Example
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Expecta" "${PODS_ROOT}/Headers/Public/PNPullToRefresh" "${PODS_ROOT}/Headers/Public/Specta" "${PODS_ROOT}/Headers/Public/UIDevice-Utils"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/PNPullToRefresh" "${PODS_CONFIGURATION_BUILD_DIR}/UIDevice-Utils"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Expecta" -isystem "${PODS_ROOT}/Headers/Public/PNPullToRefresh" -isystem "${PODS_ROOT}/Headers/Public/Specta" -isystem "${PODS_ROOT}/Headers/Public/UIDevice-Utils"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"PNPullToRefresh" -l"UIDevice-Utils"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
 PODS_ROOT = ${SRCROOT}/Pods

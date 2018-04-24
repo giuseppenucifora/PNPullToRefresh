@@ -1,6 +1,0 @@
-framework module PNPullToRefresh {
-  umbrella header "PNPullToRefresh-umbrella.h"
-
-  export *
-  module * { export * }
-}

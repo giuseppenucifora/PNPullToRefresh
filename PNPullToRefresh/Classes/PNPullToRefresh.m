@@ -6,7 +6,7 @@
 //
 
 #import "PNPullToRefresh.h"
-#import <UIDevice-Utils/UIDevice-Hardware.h>
+#import "UIDevice-Hardware.h"
 
 @interface PNPullToRefresh ()
 @property (nonatomic, weak) UITableView *tableView;

@@ -1,36 +1,31 @@
 PODS:
-  - Expecta (1.0.5)
-  - Expecta+Snapshots (3.0.0):
-    - Expecta (~> 1.0)
-    - FBSnapshotTestCase/Core (~> 2.0)
-    - Specta (~> 1.0)
-  - FBSnapshotTestCase (2.1.0):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.0)
-  - FBSnapshotTestCase/Core (2.1.0)
-  - FBSnapshotTestCase/SwiftSupport (2.1.0):
-    - FBSnapshotTestCase/Core
-  - PNPullToRefresh (0.1.0):
+  - Expecta (1.0.6)
+  - PNPullToRefresh (0.2.0):
     - UIDevice-Utils
-  - Specta (1.0.5)
-  - UIDevice-Utils (0.1.5)
+  - Specta (1.0.7)
+  - UIDevice-Utils (1.0.8)
 
 DEPENDENCIES:
   - Expecta
-  - Expecta+Snapshots
-  - FBSnapshotTestCase
   - PNPullToRefresh (from `../`)
   - Specta
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Expecta
+    - Specta
+    - UIDevice-Utils
+
 EXTERNAL SOURCES:
   PNPullToRefresh:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
-  Expecta+Snapshots: c343f410c7a6392f3e22e78f94c44b6c0749a516
-  FBSnapshotTestCase: 366ecd378511d7716c79991cd8067d1eed23578d
-  PNPullToRefresh: f366fff75319d0c8ca74208b35efb4a06b2aece1
-  Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
-  UIDevice-Utils: a87bbaed53a74d503deb3e25511c9a4d865b92ea
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
+  PNPullToRefresh: 2379545c6516e72fcce272845567ce72d8a095d2
+  Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
+  UIDevice-Utils: a629b53a88c1429cfb4bdff35b18287feebd164a
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 9009f86ffd5ec0844e5bc63d7d366d7d571c5d21
+
+COCOAPODS: 1.5.0

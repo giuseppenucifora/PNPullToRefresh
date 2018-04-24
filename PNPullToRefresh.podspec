@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "PNPullToRefresh"
-  s.version          = "0.1.0"
+  s.version          = "0.2.0"
   s.summary          = "Control like ActionBar-PullToRefresh of Android for iOS. customized from https://github.com/STAR-ZERO/STZPullToRefresh.git"
 
 # This description is used to generate tags and improve search results.
@@ -27,10 +27,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'PNPullToRefresh/Classes/**/*'
-  s.resource_bundles = {
-    'PNPullToRefresh' => ['PNPullToRefresh/Assets/*.png']
-  }
-
+  
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'UIDevice-Utils'

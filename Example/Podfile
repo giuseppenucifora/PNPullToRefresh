@@ -1,14 +1,11 @@
-use_frameworks!
+platform :ios, '9.0'
 
-target 'PNPullToRefresh_Example', :exclusive => true do
+target 'PNPullToRefresh_Example' do
   pod 'PNPullToRefresh', :path => '../'
 end
 
-target 'PNPullToRefresh_Tests', :exclusive => true do
+target 'PNPullToRefresh_Tests' do
   pod 'PNPullToRefresh', :path => '../'
-
   pod 'Specta'
   pod 'Expecta'
-  pod 'FBSnapshotTestCase'
-  pod 'Expecta+Snapshots'
 end
